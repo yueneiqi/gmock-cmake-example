@@ -1,5 +1,11 @@
 A sample project illustrating how to perform unit testing with GoogleTest and CMake
 
+## Mocking static functions
+
+TLDR: Just run `bash ./run.sh`
+
+Example code: `test/testbaz`
+
 ## Building
 
 ~~~
