@@ -6,7 +6,7 @@ include(ExternalProject)
 # Download and install GoogleTest
 ExternalProject_Add(
     gtest
-    URL https://github.com/google/googletest/archive/release-1.10.0.zip
+    URL https://github.com/google/googletest/archive/release-1.11.0.zip
     PREFIX ${CMAKE_CURRENT_BINARY_DIR}/gtest
     # Disable install step
     INSTALL_COMMAND ""
@@ -49,4 +49,5 @@ endif(WIN32)
 include_directories("${source_dir}/googletest/include"
                     "${source_dir}/googlemock/include")
 
+add_subdirectory(testbaz)
 add_subdirectory(testfoo)
